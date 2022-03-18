@@ -54,15 +54,15 @@
 
 	<nav class="menu">
 		<div class="menu__brand">
-			<a href="index.html"><div class="logo"><img class="img-fluid" src="images/logo.png" alt="" /></div></a>
+			<a href="index.php"><div class="logo"><img class="img-fluid" src="images/logo.png" alt="" /></div></a>
 		</div>
 		<ul class="menu__list">
-			<li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
-			<li class="menu__item"><a href="about-us.html" class="menu__link">About Us</a></li>
-			<li class="menu__item"><a href="services.html" class="menu__link">Services</a></li>
-			<li class="menu__item"><a href="portfolio.html" class="menu__link">Portfolio</a></li>
-			<li class="menu__item"><a href="pricing.html" class="menu__link">Pricing</a></li>
-			<li class="menu__item"><a href="contact-us.html" class="menu__link">Contact Us</a></li>
+			<li class="menu__item"><a href="index.php" class="menu__link">Home</a></li>
+			<li class="menu__item"><a href="about-us.php" class="menu__link">About Us</a></li>
+			<li class="menu__item"><a href="services.php" class="menu__link">Services</a></li>
+			<li class="menu__item"><a href="portfolio.php" class="menu__link">Portfolio</a></li>
+			<li class="menu__item"><a href="pricing.php" class="menu__link">Pricing</a></li>
+			<li class="menu__item"><a href="contact-us.php" class="menu__link">Contact Us</a></li>
 		</ul>
 	</nav>
 </header>
@@ -70,7 +70,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container-fluid">
-        <a class="navbar-brand js-scroll-trigger" href="index.html">
+        <a class="navbar-brand js-scroll-trigger" href="index.php">
 			<img class="img-fluid" src="images/logo.png" alt="" />
 		</a>
       </div>
@@ -81,10 +81,10 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="banner">
-						<h2>Pricing</h2>
+						<h2>Contact Us</h2>
 						<ul class="page-title-link">
 							<li><a href="#">Home</a></li>
-							<li><a href="#">Pricing</a></li>
+							<li><a href="#">Contact Us</a></li>
 						</ul>
 					</div>
 				</div>
@@ -92,203 +92,63 @@
 		</div>
 	</div>
 	
-    <div id="pricing" class="section lb">
-		<div class="container">
-			<div class="section-title text-center">
-                <h3>Pricing</h3>
+    <div id="contact" class="section lb">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Contact Us</h3>
                 <p>Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus.</p>
             </div><!-- end title -->
-			
-			<div class="row no-gutters pricing-table my-3 mb-5">
-				<div class="col-md-4 pr-2">
-					<div class="list-group text-center my-3">
-						<div class="list-group-item text-white bg-dark">
-							<h4 class="text-center">Basic</h4>
-						</div>
-						<div class="list-group-item text-uppercase font-weight-bold">
-							Free
-						</div>
-						<a href="#" class="list-group-item">
-							100 GB HDD Storage
-						</a>
-						<a href="#" class="list-group-item">
-							Web Server
-						</a>
-						<a href="#" class="list-group-item">
-							DNS Hosting
-						</a>
-						<a href="#" class="list-group-item">
-							Mail Server
-						</a>
-						<div class="list-group-item">
-							<button class="btn btn-secondary hover-effect-new btn-lg btn-block text-truncate"><span>Sign-up</span></button>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="list-group text-center bg-alt">
-						<div href="#" class="list-group-item text-white bg-dark">
-							<h4 class="text-center">Standard<br></h4>
-						</div>
-						<div class="list-group-item text-uppercase font-weight-bold">
-							$99/mo.
-						</div>
-						<a href="#" class="list-group-item">
-							1 TB HDD Storage
-						</a>
-						<a href="#" class="list-group-item">
-							<span class="float-right"><i class="ion-ios-star-outline fa fa-star-o"></i></span> Database Option
-						</a>
-						<a href="#" class="list-group-item">
-							Web Server
-						</a>
-						<a href="#" class="list-group-item">
-							DNS Hosting
-						</a>
-						<a href="#" class="list-group-item">
-							Mail Server
-						</a>
-						<a href="#" class="list-group-item">
-							24/7 Monitoring
-						</a>
-						<div class="list-group-item bg-inverse">
-							<button class="btn btn-secondary hover-effect-new btn-lg btn-block text-truncate"><span>Buy Now</span></button>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 pl-2">
-					<div class="list-group text-center my-3">
-						<div href="#" class="list-group-item text-white bg-dark">
-							<h4 class="text-center">Managed</h4>
-						</div>
-						<div class="list-group-item text-uppercase font-weight-bold">
-							Contact Us
-						</div>
-						<a href="#" class="list-group-item">
-							Upto 10 TB HDD Storage
-						</a>
-						<a href="#" class="list-group-item">
-							Consultation
-						</a>
-						<a href="#" class="list-group-item">
-							Custom Servers
-						</a>
-						<a href="#" class="list-group-item">
-							24/7 Support
-						</a>
-						<div class="list-group-item">
-							<button class="btn btn-secondary hover-effect-new btn-lg btn-block text-truncate"><span>Contact Us</span></button>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="pricingTable">
-                        <div class="pricingTable-header">
-                            <svg x="0px" y="0px" viewBox="0 0 260 180">
-                                <path fill="#f9ba1f" stroke-dasharray="5,5" stroke="#fff" d="M0,180.928c0,0,0-108.489,0-143.333C1.637,23.582,8.907,0,42.088,0C75.271,0,260,0,260,0v72.841
-        	                    c0,0-2.667,37.424-43.877,45.563C177.693,125.992,6.26,130.42,0,180.928z"></path>
-                                <text transform="matrix(1.0078 0 0 1 75.9497 33.8887)" fill="#fff" font-size="23.726">STANDARD</text>
-                                <g>
-                                    <text transform="matrix(1.0078 0 0 1 98.5996 65.9434)" fill="#fff" font-size="23.726">$</text>
-                                    <text transform="matrix(1.076 0 0 1 112.0176 88.458)" fill="#fff" font-size="58.1472" font-weight="600">10</text>
-                                    <text transform="matrix(1.0078 0 0 1 107.9326 106.832)" fill="#fff" font-size="16.2415">/month</text>
-                                </g>
-                            </svg>
-                        </div>
-                        <ul class="pricing-content">
-                            <li>50GB Disk Space</li>
-                            <li>50 Email Accounts</li>
-                            <li>50GB Bandwidth</li>
-                            <li class="disable">10 Subdomains</li>
-                            <li class="disable">15 Domains</li>
-                        </ul>
-                        <div class="pricingTable-signup">
-                            <svg x="0" y="0" viewBox="-35 0 160 30">
-                                <a href="#">
-                                    <path fill="#fff" d="M13.12,5.867c17.786-0.834,68.654-5.473,68.654-5.473s8.203-1.945,7.445,5.473
-                                    c-0.757,7.417-4.037,16.782-4.037,16.782s-1.667,5.881-9.719,6.932c-8.961,0.852-50.858-0.983-67.771,0
-                                    c-2.718,0.158-9.935,0.256-7.446-7.66c2.736-9.18,3.408-10.459,3.408-10.459S5.647,5.86,13.12,5.867z"></path>
-                                    <text transform="matrix(1 0 0 1 15.5055 21.0098)" fill="#34454D" font-size="10" font-weight="500">Buy New</text>
-                                </a>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-md-4 col-sm-6">
-                    <div class="pricingTable">
-                        <div class="pricingTable-header">
-                            <svg x="0px" y="0px" viewBox="0 0 260 180">
-                                <path fill="#f9ba1f" stroke-dasharray="5,5" stroke="#fff" d="M0,180.928c0,0,0-108.489,0-143.333C1.637,23.582,8.907,0,42.088,0C75.271,0,260,0,260,0v72.841
-        	                    c0,0-2.667,37.424-43.877,45.563C177.693,125.992,6.26,130.42,0,180.928z"></path>
-                                <text transform="matrix(1.0078 0 0 1 75.9497 33.8887)" fill="#fff" font-size="23.726">BUSINESS</text>
-                                <g>
-                                    <text transform="matrix(1.0078 0 0 1 98.5996 65.9434)" fill="#fff" font-size="23.726">$</text>
-                                    <text transform="matrix(1.076 0 0 1 112.0176 88.458)" fill="#fff" font-size="58.1472" font-weight="600">20</text>
-                                    <text transform="matrix(1.0078 0 0 1 107.9326 106.832)" fill="#fff" font-size="16.2415">/month</text>
-                                </g>
-                            </svg>
-                        </div>
-                        <ul class="pricing-content">
-                            <li>60GB Disk Space</li>
-                            <li>60 Email Accounts</li>
-                            <li>60GB Bandwidth</li>
-                            <li>15 Subdomains</li>
-                            <li class="disable">20 Domains</li>
-                        </ul>
-                        <div class="pricingTable-signup">
-                            <svg x="0" y="0" viewBox="-35 0 160 30">
-                                <a href="#">
-                                    <path fill="#fff" d="M13.12,5.867c17.786-0.834,68.654-5.473,68.654-5.473s8.203-1.945,7.445,5.473
-                                    c-0.757,7.417-4.037,16.782-4.037,16.782s-1.667,5.881-9.719,6.932c-8.961,0.852-50.858-0.983-67.771,0
-                                    c-2.718,0.158-9.935,0.256-7.446-7.66c2.736-9.18,3.408-10.459,3.408-10.459S5.647,5.86,13.12,5.867z"></path>
-                                    <text transform="matrix(1 0 0 1 15.5055 21.0098)" fill="#34454D" font-size="10" font-weight="500">Buy New</text>
-                                </a>
-                            </svg>
-                        </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="contact_form">
+                        <div id="message"></div>
+                        <form id="contactForm" name="sentMessage" novalidate="novalidate">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input class="form-control" id="name" type="text" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name.">
+										<p class="help-block text-danger"></p>
+									</div>
+									<div class="form-group">
+										<input class="form-control" id="email" type="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email address.">
+										<p class="help-block text-danger"></p>
+									</div>
+									<div class="form-group">
+										<input class="form-control" id="phone" type="tel" placeholder="Your Phone" required="required" data-validation-required-message="Please enter your phone number.">
+										<p class="help-block text-danger"></p>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<textarea class="form-control" id="message" placeholder="Your Message" required="required" data-validation-required-message="Please enter a message."></textarea>
+										<p class="help-block text-danger"></p>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="col-lg-12 text-left">
+									<div id="success"></div>
+									<button id="sendMessageButton" class="hover-effect-new" data-text="Send Message" type="submit"><span>Send Message</span></button>
+								</div>
+							</div>
+						</form>
                     </div>
-                </div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+	
+	<div data-key="AIzaSyAiKl_QPZ8L92aLRfpH23F5jzEuIETEhWw" data-zoom="14" role="map" class="gmaps">
+        <div data-id="1" data-lat="-33.4727092" data-lng="-70.7699143" class="marker">
+          <div class="map-card">
+            <h1>PhotoShoot</h1>
+            <p>Address: demo street, #445, Stgo.</p>
+            <p>Phone: +56753223344</p>
+            <p>e-Mail: demo@email.com</p>
+          </div>
+        </div>
 
-                <div class="col-md-4 col-sm-6">
-                    <div class="pricingTable">
-                        <div class="pricingTable-header">
-                            <svg x="0px" y="0px" viewBox="0 0 260 180">
-                                <path fill="#f9ba1f" stroke-dasharray="5,5" stroke="#fff" d="M0,180.928c0,0,0-108.489,0-143.333C1.637,23.582,8.907,0,42.088,0C75.271,0,260,0,260,0v72.841
-        	                    c0,0-2.667,37.424-43.877,45.563C177.693,125.992,6.26,130.42,0,180.928z"></path>
-                                <text transform="matrix(1.0078 0 0 1 75.9497 33.8887)" fill="#fff" font-size="23.726">PREMIUM</text>
-                                <g>
-                                    <text transform="matrix(1.0078 0 0 1 98.5996 65.9434)" fill="#fff" font-size="23.726">$</text>
-                                    <text transform="matrix(1.076 0 0 1 112.0176 88.458)" fill="#fff" font-size="58.1472" font-weight="600">30</text>
-                                    <text transform="matrix(1.0078 0 0 1 107.9326 106.832)" fill="#fff" font-size="16.2415">/month</text>
-                                </g>
-                            </svg>
-                        </div>
-                        <ul class="pricing-content">
-                            <li>70GB Disk Space</li>
-                            <li>70 Email Accounts</li>
-                            <li>70GB Bandwidth</li>
-                            <li>20 Subdomains</li>
-                            <li>25 Domains</li>
-                        </ul>
-                        <div class="pricingTable-signup">
-                            <svg x="0" y="0" viewBox="-35 0 160 30">
-                                <a href="#">
-                                    <path fill="#fff" d="M13.12,5.867c17.786-0.834,68.654-5.473,68.654-5.473s8.203-1.945,7.445,5.473
-                                    c-0.757,7.417-4.037,16.782-4.037,16.782s-1.667,5.881-9.719,6.932c-8.961,0.852-50.858-0.983-67.771,0
-                                    c-2.718,0.158-9.935,0.256-7.446-7.66c2.736-9.18,3.408-10.459,3.408-10.459S5.647,5.86,13.12,5.867z"></path>
-                                    <text transform="matrix(1 0 0 1 15.5055 21.0098)" fill="#34454D" font-size="10" font-weight="500">Buy New</text>
-                                </a>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-			
-		</div>
-	</div>
+    </div>
 	
 	 <div id="reviews" class="section wb parallaxie" style="background: url('uploads/reviews-bg.jpg')">
         <div class="container">
@@ -461,7 +321,7 @@
             <div class="footer-distributed">
                 <div class="footer-left">                    
                     <p class="footer-company-name">All Rights Reserved. &copy; 2018 Design by : 
-                    <a href="https://html.design/">html design</a> Distributed by: <a href="https://themewagon.com/">ThemeWagon</a>
+					<a href="https://html.design/">html design</a> Distributed by: <a href="https://themewagon.com/">ThemeWagon</a>
                     </p>
                 </div>
             </div>
@@ -473,6 +333,7 @@
     <!-- ALL JS FILES -->
     <script src="js/all.js"></script>
 	<!-- Camera Slider -->
+	<script src="js/jquery.gmaps.js"></script>	
 	<script src="js/jquery.mobile.customized.min.js"></script>
 	<script src="js/jquery.easing.1.3.js"></script> 
 	<script src="js/parallaxie.js"></script>
@@ -489,6 +350,5 @@
 	<script src="js/zepto.min.js"></script>
 	<script src="js/imagesloaded.pkgd.min.js"></script>
 	<script src="js/slider.js"></script>
-
 </body>
 </html>

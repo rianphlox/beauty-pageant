@@ -54,15 +54,15 @@
 
 	<nav class="menu">
 		<div class="menu__brand">
-			<a href="index.html"><div class="logo"><img class="img-fluid" src="images/logo.png" alt="" /></div></a>
+			<a href="index.php"><div class="logo"><img class="img-fluid" src="images/logo.png" alt="" /></div></a>
 		</div>
 		<ul class="menu__list">
-			<li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
-			<li class="menu__item"><a href="about-us.html" class="menu__link">About Us</a></li>
-			<li class="menu__item"><a href="services.html" class="menu__link">Services</a></li>
-			<li class="menu__item"><a href="portfolio.html" class="menu__link">Portfolio</a></li>
-			<li class="menu__item"><a href="pricing.html" class="menu__link">Pricing</a></li>
-			<li class="menu__item"><a href="contact-us.html" class="menu__link">Contact Us</a></li>
+			<li class="menu__item"><a href="index.php" class="menu__link">Home</a></li>
+			<li class="menu__item"><a href="about-us.php" class="menu__link">About Us</a></li>
+			<li class="menu__item"><a href="services.php" class="menu__link">Services</a></li>
+			<li class="menu__item"><a href="portfolio.php" class="menu__link">Portfolio</a></li>
+			<li class="menu__item"><a href="pricing.php" class="menu__link">Pricing</a></li>
+			<li class="menu__item"><a href="contact-us.php" class="menu__link">Contact Us</a></li>
 		</ul>
 	</nav>
 </header>
@@ -70,228 +70,74 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container-fluid">
-        <a class="navbar-brand js-scroll-trigger" href="index.html">
-			<img class="img-fluid" src="images/b_x.png" style="height: 60px !important; width: 60px;" alt="" />
+        <a class="navbar-brand js-scroll-trigger" href="index.php">
+			<img class="img-fluid" src="images/logo.png" alt="" />
 		</a>
       </div>
     </nav>
 	
-	<div class="demo-2">
-		<div class="page-view">
-			<div class="project">
-				<div class="text">
-					<h1>SKYLINE</h1>
-					<p>Photo by James Traf</p>
-				</div>
-			</div>
-			<div class="project">
-				<div class="text">
-					<h1>Architecture</h1>
-					<p>Photo by Steve Richey</p>
-				</div>
-			</div>
-			<div class="project">
-				<div class="text">
-					<h1>Shadows</h1>
-					<p>Photo by Samuel Zeller</p>
-				</div>
-			</div>
-			<div class="project">
-				<div class="text">
-					<h1>Perspective</h1>
-					<p>Photo by Padurariu Alexandru</p>
-				</div>
-			</div>
-			<nav class="arrows">
-				<div class="arrow previous">
-					<svg viewBox="208.3 352 4.2 6.4">
-						<polygon class="st0" points="212.1,357.3 211.5,358 208.7,355.1 211.5,352.3 212.1,353 209.9,355.1"/>
-					</svg>
-				</div>
-				<div class="arrow next">
-					<svg viewBox="208.3 352 4.2 6.4">
-						<polygon class="st0" points="212.1,357.3 211.5,358 208.7,355.1 211.5,352.3 212.1,353 209.9,355.1"/>
-					</svg>
-				</div>
-			</nav>
-		</div>
-	</div>
-	
-    
-	
-	<div id="gallery" class="section lb">
+	<div class="banner-area banner-bg-1">
 		<div class="container">
-			<div class="section-title text-center">
-				<h3>Contestants</h3>
-				<p>These are your Contestants. Cheer on! Don't Stop there. Vote! </p>
-			</div><!-- end title -->
-		
-			<div class="gallery-menu text-center row">
+			<div class="row">
 				<div class="col-md-12">
-					<div class="button-group filter-button-group">
-						<button class="active" data-filter="*">All</button>
-						<button data-filter=".photo_a">Wedding</button>
-						<button data-filter=".photo_b">Models</button>
-						<button data-filter=".photo_c">Fashion</button>
+					<div class="banner">
+						<h2>About Us</h2>
+						<ul class="page-title-link">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About Us</a></li>
+						</ul>
 					</div>
 				</div>
-			</div>
-		
-			<div class="gallery-list row">
-				<div class="col-md-4 col-sm-6 gallery-grid photo_a">
-					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-01.jpg" class="img-fluid" alt="Image">
-						<div class="box-content">
-							<div class="inner-content">
-								<h3 class="title">Wedding</h3>
-								<span class="post">Latest Photo</span>
-							</div>
-							<ul class="icon">
-								<li><a href="uploads/gallery_img-01.jpg" data-rel="prettyPhoto[gal]"><i class="fa fa-search"></i></a></li>
-								<li><a href="#"><i class="fa fa-link"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-md-4 col-sm-6 gallery-grid photo_b">
-					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-04.jpg" class="img-fluid" alt="Image">
-						<div class="box-content">
-							<div class="inner-content">
-								<h3 class="title">Models</h3>
-								<span class="post">Latest Photo</span>
-							</div>
-							<ul class="icon">
-								<li><a href="uploads/gallery_img-04.jpg" data-rel="prettyPhoto[gal]"><i class="fa fa-search"></i></a></li>
-								<li><a href="#"><i class="fa fa-link"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-md-4 col-sm-6 gallery-grid photo_c">
-					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-07.jpg" class="img-fluid" alt="Image">
-						<div class="box-content">
-							<div class="inner-content">
-								<h3 class="title">Fashion</h3>
-								<span class="post">Latest Photo</span>
-							</div>
-							<ul class="icon">
-								<li><a href="uploads/gallery_img-07.jpg" data-rel="prettyPhoto[gal]"><i class="fa fa-search"></i></a></li>
-								<li><a href="#"><i class="fa fa-link"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-md-4 col-sm-6 gallery-grid photo_a">
-					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-02.jpg" class="img-fluid" alt="Image">
-						<div class="box-content">
-							<div class="inner-content">
-								<h3 class="title">Wedding</h3>
-								<span class="post">Latest Photo</span>
-							</div>
-							<ul class="icon">
-								<li><a href="uploads/gallery_img-02.jpg" data-rel="prettyPhoto[gal]"><i class="fa fa-search"></i></a></li>
-								<li><a href="#"><i class="fa fa-link"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-md-4 col-sm-6 gallery-grid photo_b">
-					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-05.jpg" class="img-fluid" alt="Image">
-						<div class="box-content">
-							<div class="inner-content">
-								<h3 class="title">Models</h3>
-								<span class="post">Latest Photo</span>
-							</div>
-							<ul class="icon">
-								<li><a href="uploads/gallery_img-05.jpg" data-rel="prettyPhoto[gal]"><i class="fa fa-search"></i></a></li>
-								<li><a href="#"><i class="fa fa-link"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-md-4 col-sm-6 gallery-grid photo_c">
-					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-08.jpg" class="img-fluid" alt="Image">
-						<div class="box-content">
-							<div class="inner-content">
-								<h3 class="title">Fashion</h3>
-								<span class="post">Latest Photo</span>
-							</div>
-							<ul class="icon">
-								<li><a href="uploads/gallery_img-08.jpg" data-rel="prettyPhoto[gal]"><i class="fa fa-search"></i></a></li>
-								<li><a href="#"><i class="fa fa-link"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-md-4 col-sm-6 gallery-grid photo_a">
-					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-03.jpg" class="img-fluid" alt="Image">
-						<div class="box-content">
-							<div class="inner-content">
-								<h3 class="title">Wedding</h3>
-								<span class="post">Latest Photo</span>
-							</div>
-							<ul class="icon">
-								<li><a href="uploads/gallery_img-03.jpg" data-rel="prettyPhoto[gal]"><i class="fa fa-search"></i></a></li>
-								<li><a href="#"><i class="fa fa-link"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-md-4 col-sm-6 gallery-grid photo_b">
-					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-06.jpg" class="img-fluid" alt="Image">
-						<div class="box-content">
-							<div class="inner-content">
-								<h3 class="title">Models</h3>
-								<span class="post">Latest Photo</span>
-							</div>
-							<ul class="icon">
-								<li><a href="uploads/gallery_img-06.jpg" data-rel="prettyPhoto[gal]"><i class="fa fa-search"></i></a></li>
-								<li><a href="#"><i class="fa fa-link"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-md-4 col-sm-6 gallery-grid photo_c">
-					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-09.jpg" class="img-fluid" alt="Image">
-						<div class="box-content">
-							<div class="inner-content">
-								<h3 class="title">Fashion</h3>
-								<span class="post">Latest Photo</span>
-							</div>
-							<ul class="icon">
-								<li><a href="uploads/gallery_img-09.jpg" data-rel="prettyPhoto[gal]"><i class="fa fa-search"></i></a></li>
-								<li><a href="#"><i class="fa fa-link"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				
-				
 			</div>
 		</div>
 	</div>
+	
+    <div id="about" class="section wb">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <div class="message-box">                        
+                        <h2> Welcome To PhotoShoot</h2>
+                        <p> Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed vitae rutrum neque. Ut id erat sit amet libero bibendum aliquam. Donec ac egestas libero, eu bibendum risus. Phasellus et congue justo. Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+						<p>Sed vitae rutrum neque. Ut id erat sit amet libero bibendum aliquam. Donec ac egestas libero, eu bibendum risus. Phasellus et congue justo.</p>
+						
+                        <a href="#" class="hover-effect-new"><span>Lorem Ipsum</span></a>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+
+                <div class="col-md-6">
+                    <div class="right-box-pro wow fadeIn">
+                        <img src="uploads/about_02.jpg" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+			
+			<div class="row">
+                <div class="col-md-6">
+                    <div class="right-box-pro wow fadeIn">
+                        <img src="uploads/about_03.jpg" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+				
+				<div class="col-md-6">
+                    <div class="message-box">                        
+                        <h2> What we do</h2>
+                        <p> Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed vitae rutrum neque. Ut id erat sit amet libero bibendum aliquam. Donec ac egestas libero, eu bibendum risus. Phasellus et congue justo. Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+						<p>Sed vitae rutrum neque. Ut id erat sit amet libero bibendum aliquam. Donec ac egestas libero, eu bibendum risus. Phasellus et congue justo.</p>
+						
+                        <a href="#" class="hover-effect-new"><span>Lorem Ipsum</span></a>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+				
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
 	
     <div id="services" class="section lb">
         <div class="container">
             <div class="section-title text-center">
-                <h3>Vote</h3>
-                <p>Each of these candidates have gone through a rigorous vetting process. Oh yes, and they are up for your votes. Send them coming!</p>
+                <h3>Services</h3>
+                <p>Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus.</p>
             </div><!-- end title -->
 
             <div class="row">
@@ -301,8 +147,8 @@
 							<div class="ser-icon">
 								<i class="flaticon-wedding-photo"></i>
 							</div>
-							<h2>Support</h2>
-							<p>You can support your favourite Contestants by following them on KingsChat. Leave a like and a comment on the pictures. Yeah! It increases their chances</p>
+							<h2>Wedding Photography</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						</div>
 					</div>
                 </div><!-- end col -->
@@ -312,8 +158,8 @@
 							<div class="ser-icon">
 								<i class="flaticon-image"></i>
 							</div>
-							<h2>Cheer</h2>
-							<p>You can make a short clip on why you want your prefered candidate to win. Be rest assured. We'll get to them. Just don't make it too long. <br>&nbsp;&nbsp;&nbsp;</p>
+							<h2>Portrait photography</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						</div>
 					</div>
                 </div><!-- end col -->
@@ -323,8 +169,8 @@
 							<div class="ser-icon">
 								<i class="flaticon-event"></i>
 							</div>
-							<h2>Cast your Vote</h2>
-							<p>All you need do now is cast your vote. You simply need ₦300 to vote for that candidate you love. Invite your friends too to vote and you might just see your candidate win. Easy!</p>
+							<h2>Event Photography</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						</div>
 					</div>
                 </div><!-- end col -->
@@ -434,8 +280,6 @@
             </div><!-- end row -->
         </div><!-- end container -->
     </div><!-- end section -->
-	
-	<!--  -->
 	
 	<footer class="main-footer">
 		<div class="container">
