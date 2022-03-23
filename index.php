@@ -1,5 +1,6 @@
 <?php
-	$conn = new mysqli('localhost', 'root', '', 'pageant') or die('Failed to connect to MySQLi'. $conn->connect_error);
+	require 'config/env.php';
+	require_once 'config/db.php';
 
 	$stmt = $conn->prepare('select * from contestants');
 	$stmt->execute();
@@ -55,24 +56,34 @@
 								break;
 						}
 					 ?>
-					<div class="col-md-4 col-sm-6 gallery-grid <?= $photo ?>">
-						<div class="gallery-single fix">
-							<img src="<?= $image_path ?>" class="img-fluid" alt="Image">
-							<div class="box-content">
-								<div class="inner-content">
-									<h3 class="title"><?= $fullname ?></h3>
-									<span class="post"><?= $church_group ?></span>
-									<span class="post">
-										<a class="color: white" href="<?= $kc_link ?>">KingsChat</a>
-									</span>
+
+					<form id="<?= $id ?>" class="paymentForm">
+						<div class="col-md-4 col-sm-6 gallery-grid <?= $photo ?>">
+							<div class="gallery-single fix">
+								<img src="<?= $image_path ?>" class="img-fluid" alt="Image">
+								<div class="box-content">
+									<div class="inner-content">
+										<h3 class="title"><?= $fullname ?></h3>
+										<span class="post"><?= $church_group ?></span>
+										<span class="post">
+											<a class="color: white" href="<?= $kc_link ?>">KingsChat</a>
+										</span>
+									</div>
+									<ul class="icon">
+										<li><a href="<?= $image_path ?>" data-rel="prettyPhoto[gal]"><i class="fa fa-search"></i></a></li>
+										<!-- <li><a role="button" onclick="paystack" href="#<?= $id ?>paystack_link"><i class="fa fa-link"></i></a></li> -->
+										<li><button type="submit">
+											<i class="fa fa-link"></i>
+										</button></li>
+									</ul>
+
+									
 								</div>
-								<ul class="icon">
-									<li><a href="<?= $image_path ?>" data-rel="prettyPhoto[gal]"><i class="fa fa-search"></i></a></li>
-									<li><a role="button" onclick="paystack" href="#<?= $id ?>paystack_link"><i class="fa fa-link"></i></a></li>
-								</ul>
 							</div>
 						</div>
-					</div>
+
+					</form>
+					
 					
 				<?php endforeach; ?>	
 				
@@ -80,7 +91,7 @@
 		</div>
 	</div>
 	
-    <div id="services" class="section lb">
+	<div id="services" class="section lb">
         <div class="container">
             <div class="section-title text-center">
                 <h3>Vote</h3>
@@ -132,19 +143,46 @@
 	<script src="js/imagesloaded.pkgd.min.js"></script>
 	<script src="js/slider.js"></script>
 	<script>
-		const paystack = new PaystackPop();
-		paystack.newTransaction({
-		// other params
-		
-		
-		onSuccess: (transaction) => { 
-			// Payment complete! Reference: transaction.reference 
-		},
-		onCancel: () => {
-			// user closed popup
-			alert("Failed")
-		}
-		});
+		// const paymentForms = document.querySelectorAll('form[class="vote"]')
+		// paymentForms.forEach(paymentForm => {
+		// 	paymentForm.addEventListener('submit', e => {
+		// 		e.preventDefault();
+		// 		// console.log(paymentForm.querySelectorAll('input').v)
+		// 		// paymentForm.querySelectorAll('input').forEach(input => {
+		// 		// 	console.log(input.value)
+		// 		// })
+				
+		// 	})
+		// })
+		const paymentForms = document.querySelectorAll('.paymentForm')
+		paymentForms.forEach(paymentForm => {
+			paymentFormId = paymentForm.id ;
+			paymentForm.addEventListener("submit", payWithPaystack, false);
+			function payWithPaystack(e) {
+				e.preventDefault();
+				let handler = PaystackPop.setup({
+				key: 'pk_test_0c33d37dd61cc39c532234fc1e6083c74527b624', // Replace with your public key
+				// email: paymentForm.querySelectorAll('input')[0].value,
+				// amount: paymentForm.querySelectorAll('input')[1].value * 100,
+				email: 'adwele@gmail.com',
+				amount: 300 * 100,
+				ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
+				// label: "Optional string that replaces customer email"
+				onClose: function(){
+					alert('Window closed.');
+					// window.location = ''
+				},
+				callback: function(response){
+					let message = 'Payment complete! Reference: ' + response.reference;
+					alert(message);
+					window.location = `verify.php?reference=${response.reference}&id=${paymentFormId}`
+				}
+			});
+			handler.openIframe();
+			// console.log(paymentForm.querySelectorAll('input')[0].value)
+			}
+
+		})
 	</script>
 
 </body>
