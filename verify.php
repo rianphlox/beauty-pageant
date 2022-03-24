@@ -38,18 +38,23 @@
     // echo $response;
     $result = json_decode($response);
     if ($result->data->status == 'success') {
-        // $sql = 'select vote_count from contestants where id = ?';
-        // $stmt = $conn->prepare($stmt);
-        // $stmt->bind_param('i', $user_id);
-        // $stmt->execute();
-        // $stmt->bind_result($id);
-        // $stmt->fetch();
-        // $vote = $id = 1;
-        // $sql = 'insert into contestants (vote_count) values (?)';
-        // $stmt->bind_param('i', $vote);
-        // if ($stmt->execute()) {
-        //     echo "You've voted";
-        // }
+        $sql = "select vote_count from contestants where id = ?";
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param('i', $user_id);
+        $stmt->execute();
+        $stmt->bind_result($vote_count);
+        $stmt->fetch();
+        $stmt->close();
+
+        $vote_count = $vote_count + 1;
+        $sql = "UPDATE `contestants` SET `vote_count` = ? WHERE `contestants`.`id` = ?";
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param('ii', $vote_count, $user_id);
+        if ($stmt->execute()) {
+          header('location: ./');
+          // echo "<script>alert('Voted')</script>";
+        }
+        
     }
   }
 ?>

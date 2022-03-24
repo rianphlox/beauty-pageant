@@ -6,6 +6,8 @@
 	$stmt->execute();
 	$results = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 
+	
+
 ?>
 
 <?php include 'inc/header.php' ?>
@@ -35,7 +37,7 @@
 						<button class="active " data-filter="*">All</button>
 						<button data-filter=".photo_a">Group 1</button>
 						<button data-filter=".photo_b">Group 2</button>
-						<button class="mt-2" data-filter=".photo_c">Group 3</button>
+						<button data-filter=".photo_c" class="mt-2" >Group 3</button>
 					</div>
 				</div>
 			</div>
@@ -46,10 +48,13 @@
 					<?php
 						switch ($church_group) {
 							case 'GROUP 2':
+								# code...
 								$photo = 'photo_b';
 								break;
 							case 'GROUP 3':
+								# code...
 								$photo = 'photo_c';
+								break;
 							default:
 								# code...
 								$photo = 'photo_a';
@@ -71,10 +76,12 @@
 									</div>
 									<ul class="icon">
 										<li><a href="<?= $image_path ?>" data-rel="prettyPhoto[gal]"><i class="fa fa-search"></i></a></li>
-										<!-- <li><a role="button" onclick="paystack" href="#<?= $id ?>paystack_link"><i class="fa fa-link"></i></a></li> -->
-										<li><button type="submit">
-											<i class="fa fa-link"></i>
-										</button></li>
+									
+										<li>
+											<button class="xd" type="submit" >
+												<i class="fa fa-link"></i>
+											</button>
+										</li>
 									</ul>
 
 									
@@ -142,48 +149,7 @@
 	<script src="js/zepto.min.js"></script>
 	<script src="js/imagesloaded.pkgd.min.js"></script>
 	<script src="js/slider.js"></script>
-	<script>
-		// const paymentForms = document.querySelectorAll('form[class="vote"]')
-		// paymentForms.forEach(paymentForm => {
-		// 	paymentForm.addEventListener('submit', e => {
-		// 		e.preventDefault();
-		// 		// console.log(paymentForm.querySelectorAll('input').v)
-		// 		// paymentForm.querySelectorAll('input').forEach(input => {
-		// 		// 	console.log(input.value)
-		// 		// })
-				
-		// 	})
-		// })
-		const paymentForms = document.querySelectorAll('.paymentForm')
-		paymentForms.forEach(paymentForm => {
-			paymentFormId = paymentForm.id ;
-			paymentForm.addEventListener("submit", payWithPaystack, false);
-			function payWithPaystack(e) {
-				e.preventDefault();
-				let handler = PaystackPop.setup({
-				key: 'pk_test_0c33d37dd61cc39c532234fc1e6083c74527b624', // Replace with your public key
-				// email: paymentForm.querySelectorAll('input')[0].value,
-				// amount: paymentForm.querySelectorAll('input')[1].value * 100,
-				email: 'adwele@gmail.com',
-				amount: 300 * 100,
-				ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
-				// label: "Optional string that replaces customer email"
-				onClose: function(){
-					alert('Window closed.');
-					// window.location = ''
-				},
-				callback: function(response){
-					let message = 'Payment complete! Reference: ' + response.reference;
-					alert(message);
-					window.location = `verify.php?reference=${response.reference}&id=${paymentFormId}`
-				}
-			});
-			handler.openIframe();
-			// console.log(paymentForm.querySelectorAll('input')[0].value)
-			}
-
-		})
-	</script>
-
+	<script src="js/payment.js"></script>
+	
 </body>
 </html>
