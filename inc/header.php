@@ -54,15 +54,15 @@
 
 	<nav class="menu">
 		<div class="menu__brand">
-			<a href="index.php"><div class="logo"><img class="img-fluid" src="images/logo.png" alt="" /></div></a>
+			<a href="index"><div class="logo"><img class="img-fluid" src="images/logo.png" alt="" /></div></a>
 		</div>
 		<ul class="menu__list">
-			<li class="menu__item"><a href="index.php" class="menu__link">Home</a></li>
-			<li class="menu__item"><a href="about-us.php" class="menu__link">About Us</a></li>
-			<li class="menu__item"><a href="services.php" class="menu__link">Services</a></li>
-			<li class="menu__item"><a href="portfolio.php" class="menu__link">Portfolio</a></li>
-			<li class="menu__item"><a href="pricing.php" class="menu__link">Pricing</a></li>
-			<li class="menu__item"><a href="contact-us.php" class="menu__link">Contact Us</a></li>
+			<li class="menu__item"><a href="./" class="menu__link">Home</a></li>
+			<li class="menu__item"><a href="about-us" class="menu__link">About Us</a></li>
+			<li class="menu__item"><a href="services" class="menu__link">Services</a></li>
+			<li class="menu__item"><a href="portfolio" class="menu__link">Portfolio</a></li>
+			<li class="menu__item"><a href="pricing" class="menu__link">Pricing</a></li>
+			<li class="menu__item"><a href="contact-us" class="menu__link">Contact Us</a></li>
 		</ul>
 	</nav>
 </header>

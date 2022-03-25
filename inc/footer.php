@@ -54,6 +54,7 @@
 								<button href="" class="btn hover-effect-new btn-primary" type="submit" role="button"><span> Subscribe </span></button>
 							</div>
 						</form>
+						
 					</div>
 
 				</div>
