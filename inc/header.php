@@ -37,12 +37,12 @@
 <body id="page-top" class="politics_version">
 
     <!-- LOADER -->
-    <div id="preloader">
+    <!-- <div id="preloader">
 		<div class="loader-rd"></div>
 		<div class="loader-rd"></div>
 		<div class="loader-rd"></div>
 		<div class="loader-rd"></div>
-    </div><!-- end loader -->
+    </div>end loader -->
     <!-- END LOADER -->
 	
 <header class="header">
@@ -58,11 +58,11 @@
 		</div>
 		<ul class="menu__list">
 			<li class="menu__item"><a href="./" class="menu__link">Home</a></li>
-			<li class="menu__item"><a href="about-us" class="menu__link">About Us</a></li>
-			<li class="menu__item"><a href="services" class="menu__link">Services</a></li>
-			<li class="menu__item"><a href="portfolio" class="menu__link">Portfolio</a></li>
-			<li class="menu__item"><a href="pricing" class="menu__link">Pricing</a></li>
-			<li class="menu__item"><a href="contact-us" class="menu__link">Contact Us</a></li>
+			<!-- <li class="menu__item"><a href="about-us" class="menu__link">About Us</a></li> -->
+			<!-- <li class="menu__item"><a href="services" class="menu__link">Services</a></li> -->
+			<!-- <li class="menu__item"><a href="portfolio" class="menu__link">Portfolio</a></li> -->
+			<!-- <li class="menu__item"><a href="pricing" class="menu__link">Pricing</a></li> -->
+			<!-- <li class="menu__item"><a href="contact-us" class="menu__link">Contact Us</a></li> -->
 		</ul>
 	</nav>
 </header>

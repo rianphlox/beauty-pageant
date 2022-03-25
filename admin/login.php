@@ -26,7 +26,7 @@
             } else {
                 $msg = "Admin exists. You'll be redirected shortly";
                 $msgClass = "alert-success";
-                header('location: dashboard');
+                // header('location: dashboard');
             }
         }
     }
